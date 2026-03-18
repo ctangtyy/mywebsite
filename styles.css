@@ -155,8 +155,42 @@ a {
 
 .hero-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr);
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
   gap: 3rem;
+}
+
+.hero-text {
+  align-self: center;
+}
+
+.hero-photo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-photo-card {
+  position: relative;
+  border-radius: 24px;
+  padding: 0.35rem;
+  background: radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.3), rgba(15, 23, 42, 0.95));
+  box-shadow: 0 26px 60px rgba(15, 23, 42, 0.95);
+  max-width: 260px;
+}
+
+.hero-photo-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 26px;
+  border: 1px solid rgba(148, 163, 184, 0.55);
+  pointer-events: none;
+}
+
+.hero-photo {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .eyebrow {
