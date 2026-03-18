@@ -1,12 +1,12 @@
 :root {
-  --bg: #050816;
-  --bg-elevated: #0b1020;
-  --bg-alt: #070b16;
-  --text: #f9fafb;
-  --muted: #9ca3af;
-  --accent: #38bdf8;
-  --accent-soft: rgba(56, 189, 248, 0.1);
-  --border-subtle: rgba(148, 163, 184, 0.4);
+  --bg: #12091a;
+  --bg-elevated: #1a0f27;
+  --bg-alt: #1b1024;
+  --text: #fbf7ff;
+  --muted: #c4b5fd;
+  --accent: #e9d5ff;
+  --accent-soft: rgba(233, 213, 255, 0.16);
+  --border-subtle: rgba(216, 180, 254, 0.5);
   --radius-lg: 16px;
   --radius-full: 999px;
   --shadow-soft: 0 24px 60px rgba(15, 23, 42, 0.9);
@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at top, #1f2937 0, #020617 45%, #020617 100%);
+  background: radial-gradient(circle at top, #341b4a 0, #12091a 45%, #050013 100%);
 }
 
 img {
@@ -59,11 +59,11 @@ a {
   backdrop-filter: blur(18px);
   background: linear-gradient(
     to bottom,
-    rgba(2, 6, 23, 0.92),
-    rgba(2, 6, 23, 0.85),
+    rgba(24, 12, 45, 0.96),
+    rgba(10, 6, 25, 0.9),
     transparent
   );
-  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+  border-bottom: 1px solid rgba(216, 180, 254, 0.4);
 }
 
 .header-inner {
@@ -80,8 +80,8 @@ a {
   font-size: 0.85rem;
   padding: 0.3rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.55);
-  background: radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.26), transparent 55%);
+  border: 1px solid rgba(216, 180, 254, 0.7);
+  background: radial-gradient(circle at 0 0, rgba(233, 213, 255, 0.46), transparent 55%);
 }
 
 .logo span {
@@ -109,7 +109,7 @@ a {
   bottom: 0;
   width: 0;
   height: 1px;
-  background: linear-gradient(to right, #22d3ee, #38bdf8, #818cf8);
+  background: linear-gradient(to right, #f5d0fe, #e9d5ff, #a5b4fc);
   transition: width var(--transition-med);
 }
 
@@ -123,8 +123,8 @@ a {
 
 .theme-toggle {
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.5);
-  background: radial-gradient(circle at 30% 0%, rgba(56, 189, 248, 0.3), transparent 55%);
+  border: 1px solid rgba(216, 180, 254, 0.6);
+  background: radial-gradient(circle at 30% 0%, rgba(233, 213, 255, 0.32), transparent 55%);
   color: var(--text);
   padding: 0.35rem 0.75rem;
   display: inline-flex;
@@ -172,8 +172,8 @@ a {
   position: relative;
   border-radius: 24px;
   padding: 0.35rem;
-  background: radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.3), rgba(15, 23, 42, 0.95));
-  box-shadow: 0 26px 60px rgba(15, 23, 42, 0.95);
+  background: radial-gradient(circle at 0 0, rgba(233, 213, 255, 0.38), rgba(17, 15, 40, 0.98));
+  box-shadow: 0 26px 60px rgba(17, 12, 40, 0.96);
   max-width: 260px;
 }
 
@@ -182,7 +182,7 @@ a {
   position: absolute;
   inset: -1px;
   border-radius: 26px;
-  border: 1px solid rgba(148, 163, 184, 0.55);
+  border: 1px solid rgba(216, 180, 254, 0.7);
   pointer-events: none;
 }
 
@@ -235,25 +235,25 @@ h1 {
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, #22d3ee, #38bdf8, #818cf8);
-  color: #0b1120;
-  box-shadow: 0 18px 45px rgba(30, 64, 175, 0.8);
+  background: linear-gradient(135deg, #f5d0fe, #e9d5ff, #a5b4fc);
+  color: #1f102b;
+  box-shadow: 0 18px 45px rgba(76, 29, 149, 0.8);
 }
 
 .btn.primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 22px 55px rgba(15, 23, 42, 0.95);
+  box-shadow: 0 22px 55px rgba(46, 16, 101, 0.98);
 }
 
 .btn.ghost {
-  border-color: rgba(148, 163, 184, 0.5);
+  border-color: rgba(216, 180, 254, 0.6);
   color: var(--text);
-  background: radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.18), rgba(15, 23, 42, 0.9));
+  background: radial-gradient(circle at 0 0, rgba(233, 213, 255, 0.18), rgba(17, 12, 40, 0.96));
 }
 
 .btn.ghost:hover {
-  border-color: rgba(148, 163, 184, 0.9);
-  background: radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.2), rgba(15, 23, 42, 1));
+  border-color: rgba(233, 213, 255, 0.95);
+  background: radial-gradient(circle at 0 0, rgba(233, 213, 255, 0.24), rgba(19, 13, 45, 1));
 }
 
 .section {
@@ -261,9 +261,9 @@ h1 {
 }
 
 .section-alt {
-  background: radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.14), rgba(2, 6, 23, 0.95));
-  border-top: 1px solid rgba(148, 163, 184, 0.25);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  background: radial-gradient(circle at 0 0, rgba(233, 213, 255, 0.18), rgba(18, 8, 34, 0.98));
+  border-top: 1px solid rgba(216, 180, 254, 0.4);
+  border-bottom: 1px solid rgba(216, 180, 254, 0.4);
 }
 
 h2 {
@@ -288,13 +288,13 @@ h2 {
 .card {
   background: linear-gradient(
     145deg,
-    rgba(15, 23, 42, 0.98),
-    rgba(15, 23, 42, 0.96),
-    rgba(30, 64, 175, 0.6)
+    rgba(20, 12, 43, 0.98),
+    rgba(21, 10, 52, 0.96),
+    rgba(129, 140, 248, 0.5)
   );
   border-radius: var(--radius-lg);
   padding: 1.3rem 1.4rem;
-  border: 1px solid rgba(148, 163, 184, 0.6);
+  border: 1px solid rgba(216, 180, 254, 0.7);
   box-shadow: var(--shadow-soft);
 }
 
@@ -338,7 +338,7 @@ h2 {
 .project-card {
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.2), rgba(15, 23, 42, 0.98));
+  background: radial-gradient(circle at 0 0, rgba(233, 213, 255, 0.22), rgba(20, 10, 48, 0.98));
   box-shadow: var(--shadow-subtle);
 }
 
@@ -348,11 +348,11 @@ h2 {
   inset: -40%;
   background: conic-gradient(
     from 180deg at 50% 50%,
-    rgba(56, 189, 248, 0.2),
+    rgba(233, 213, 255, 0.2),
     transparent,
-    rgba(129, 140, 248, 0.3),
+    rgba(196, 181, 253, 0.35),
     transparent,
-    rgba(56, 189, 248, 0.2)
+    rgba(233, 213, 255, 0.2)
   );
   opacity: 0;
   transition: opacity var(--transition-med);
@@ -384,8 +384,8 @@ h2 {
   font-size: 0.75rem;
   padding: 0.25rem 0.6rem;
   border-radius: 999px;
-  background: rgba(15, 23, 42, 0.2);
-  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(24, 12, 45, 0.4);
+  border: 1px solid rgba(216, 180, 254, 0.7);
   color: var(--muted);
 }
 
@@ -407,7 +407,7 @@ h2 {
 }
 
 .site-footer {
-  border-top: 1px solid rgba(148, 163, 184, 0.3);
+  border-top: 1px solid rgba(216, 180, 254, 0.4);
   padding: 1.4rem 0 1.7rem;
 }
 
