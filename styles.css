@@ -1,7 +1,7 @@
 :root {
-  --bg: #faf5ff;
+  --bg: #e9d7fb;
   --bg-elevated: #f5f3ff;
-  --bg-alt: #ede9fe;
+  --bg-alt: #c0b2fe;
   --text: #1f2937;
   --muted: #6b7280;
   --accent: #7c3aed;
@@ -367,6 +367,47 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.6rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(148, 163, 184, 0.2), rgba(148, 163, 184, 0.6));
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 999px;
+  border: 2px solid rgba(167, 139, 250, 0.9);
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(196, 181, 253, 0.25);
+}
+
+.timeline-year {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
 }
 
 .project-card {
